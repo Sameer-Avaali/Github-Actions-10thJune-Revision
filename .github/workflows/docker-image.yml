@@ -43,4 +43,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: sameerahmedshariff007/dockertest
+          tags:  |
+            sameerahmedshariff/dockertest:v${{ github.run_number }}
+            sameerahmedshariff/dockertest:latest
